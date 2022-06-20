@@ -10,13 +10,15 @@
 </head>
 <body>
     <div id="app">
-        <p>{{title}}</p>
-        <img v-bind:src="src" alt="">
-        <hr>
-        <a v-bind:href="link">Click here</a>
-        <hr>
-        <p v-text="myText"></p>
-        <P v-html="myBoldText"></P>
+       <p v-if="changeUserName()">
+        you are go now....
+       </p>
+       <p v-else-if="userName==='Mahamudul'">
+        please,,,, go ahead.
+       </p>
+       <p >
+        you are not to go...sorry.
+       </p>
     </div>
     <script src="app.js"></script>
 </body>
