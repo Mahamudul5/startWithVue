@@ -10,15 +10,13 @@
 </head>
 <body>
     <div id="app">
-      <h1>
+      
         {{name}}
        
-      </h1>
-      <h1 v-once>
-        {{name}}
+     <button v-on:click="updateName">Click me</button>
         
-      </h1>
-      {{update()}}
+      
+     
     </div>
     <script src="app.js"></script>
 </body>
