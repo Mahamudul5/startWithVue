@@ -14,10 +14,23 @@
         {{name}}
        
      <button v-on:click="updateName">Click me</button>
+     <div v-on:mousemove="getCord" class="box">
+        Hover me :
+     </div>
+     <p>X:{{x}}</p>
+     <p>Y:{{y}}</p>
         
       
      
     </div>
     <script src="app.js"></script>
 </body>
+<style>
+.box{
+    background-color: aqua;
+    width: 400px;
+    height: 400px;
+}
+    
+</style>
 </html>
