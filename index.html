@@ -10,15 +10,15 @@
 </head>
 <body>
     <div id="app">
-       <p v-if="changeUserName()">
-        you are go now....
-       </p>
-       <p v-else-if="userName==='Mahamudul'">
-        please,,,, go ahead.
-       </p>
-       <p >
-        you are not to go...sorry.
-       </p>
+      <h1>
+        {{name}}
+       
+      </h1>
+      <h1 v-once>
+        {{name}}
+        
+      </h1>
+      {{update()}}
     </div>
     <script src="app.js"></script>
 </body>

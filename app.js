@@ -1,15 +1,14 @@
 new Vue({
 el:"#app",
-data:{
- userName:"Mahamudul",
- age:16,
- allowedAge:20
-
+data:
+{
+name:'bilash'
 },
-methods:{
-changeUserName(){
-    return this.userName==="hhhs" ? true:false
-}
-
-}
+methods: {
+    update(){
+        setTimeout(()=>{
+            this.name='mahamudul'
+        },2000)
+    }
+},
 });
