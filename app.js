@@ -7,12 +7,16 @@ x:0,
 y:0
 },
 methods: {
-    updateName(){
-        this.name='mahamudul';
+    updateName(newName,event){
+        this.name=newName;
+        console.log(event)
        },
        getCord(event){
 this.x=event.clientX;
 this.y=event.clientY;
+       },
+       submitFrom(){
+        console.log('form submitted');
        }
 },
 });

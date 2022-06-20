@@ -13,14 +13,17 @@
       
         {{name}}
        
-     <button v-on:click="updateName">Click me</button>
+     <button v-on:click="updateName('abdullah',$event)">Click me</button>
      <div v-on:mousemove="getCord" class="box">
         Hover me :
      </div>
      <p>X:{{x}}</p>
      <p>Y:{{y}}</p>
         
-      
+      <form v-on:submit.prevent="submitFrom">
+        <input type="text">
+        <button type="submit">submit</button>
+      </form>
      
     </div>
     <script src="app.js"></script>
